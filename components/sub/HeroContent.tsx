@@ -48,7 +48,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          &rsaquo;&rsaquo;&nbsp; Je suis Etudiant à l'IUT de Lens, en BUT 2 regardez mes projets et les techno que j'utilise !
+          &rsaquo;&rsaquo;&nbsp; Je suis Etudiant à l&apos;IUT de Lens, en BUT 2 regardez mes projets et les techno que j&apos;utilise !
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}

@@ -14,7 +14,8 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         {Projets_fill.map((project) => (
             <ProjectCard
-            src={project.Image}
+            key={project.project_name}
+            src={project.src}
             title={project.project_name}
             description={project.description}
           />
