@@ -37,3 +37,8 @@ export function slideInFromLeft(delay: number) {
       },
     },
   };
+
+  export const fadeOut = {
+    breatheIn: { scale: 1.2 },
+    breatheOut: { scale: 1 },
+  };
