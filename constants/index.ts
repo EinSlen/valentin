@@ -1,5 +1,3 @@
-import exp from "constants";
-
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -167,19 +165,7 @@ export const Skill_data = [
     },
   
   ];
-  
-  
-  
-  export const Other_skill = [
-    {
-      skill_name: "",
-      Image: "",
-      width: 70,
-      height: 70,
 
-    }
-    
-  ];
 
   export const Projets_fill = [
     {
