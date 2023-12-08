@@ -1,6 +1,13 @@
+'use client';
+
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
 import { Projets_fill } from "@/constants";
+import { motion } from "framer-motion";
+import {
+  slideInFromLeft
+} from "@/utils/motion";
+
 
 const Projects = () => {
   return (
@@ -20,8 +27,17 @@ const Projects = () => {
             description={project.description}
           />
           ))}
-      </div>
+      </div> 
+      <motion.a
+        variants={slideInFromLeft(1)}
+        href="https://github.com/EinSlen?tab=repositories"
+        target="_blank"
+        className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 mt-5 z-50"
+      >
+        En savoir plus...
+      </motion.a>   
     </div>
+    
   );
 };
 

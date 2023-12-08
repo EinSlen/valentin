@@ -20,7 +20,7 @@ const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className='text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]'
         >
-            Développer ses compétences avec ces techno
+            Développer ses compétences avec les technos !
         </motion.div>
         <motion.div
         variants={slideInFromRight(0.5)}
