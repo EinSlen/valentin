@@ -130,11 +130,12 @@
               <SparklesAnimations text="BUT 2" /> regardez mes projets
               et les techno que j&apos;utilise !
             </motion.p>
+            <br />
             <motion.a
               variants={slideInFromLeft(1)}
               href="/cv.pdf"
               target="_blank"
-              className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 mt-5 z-50"
+              className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 z-50"
             >
               Télécharger mon CV
             </motion.a>
