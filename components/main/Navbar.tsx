@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-5">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
       <div className="w-full h-full flex flex-row items-center justify-between">
         <a href="/" className="flex flex-row items-center sm:pr-2">
           <div className="relative w-12 h-12 md:w-15 md:h-15">
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links for Desktop */}
-        <div className="hidden md:flex items-center border mx-auto border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200 md:gap-10">
+        <div className="hidden md:flex items-center border mx-auto border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200 md:gap-20">
           <a href="#about-me" className="cursor-pointer">
             A propos
           </a>
