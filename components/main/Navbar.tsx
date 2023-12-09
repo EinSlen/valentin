@@ -6,8 +6,8 @@ import React from "react";
     return (
       <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 md:px-10">
         <div className="w-full h-full flex flex-row items-center justify-between">
-          <a href="/" className="flex flex-row items-center">
-            <div className="relative w-12 h-12 md:w-15 md:h-15 md:mr-5 md:px-5">
+          <a href="/" className="flex flex-row items-center sm:pr-2">
+            <div className="relative w-12 h-12 md:w-15 md:h-15">
               <Image
                 src="https://avatars.githubusercontent.com/u/62669119?v=4"
                 alt="logo"
@@ -21,7 +21,7 @@ import React from "react";
             </span>
           </a>
 
-          <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
+          <div className="w-[500px] h-full flex flex-row items-center justify-between">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a href="#about-me" className="cursor-pointer">
               A propos
