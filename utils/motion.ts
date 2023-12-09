@@ -1,3 +1,6 @@
+import { animate, useAnimation, AnimationControls, motion } from 'framer-motion';
+import React, { useEffect } from "react";
+
 export function slideInFromLeft(delay: number) {
     return {
       hidden: { x: -100, opacity: 0 },
