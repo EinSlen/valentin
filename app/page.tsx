@@ -13,9 +13,3 @@ export default function Home() {
     </main>
   );
 }
-
-export function HomeProjects() {
-  return (
-    <div>test</div>
-  );
-}
