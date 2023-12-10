@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import ProjectCard from "../sub/ProjectCard";
 import { Projets_fill } from "@/constants";
 import { motion } from "framer-motion";
@@ -10,22 +11,27 @@ import {
 import { useState, useEffect } from "react";
 
 const Projects = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 }); // Ajoutez des breakpoints selon vos besoins
+  const groupSize = isMobile ? 1 : 3;
+
   const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentGroupIndex((prevIndex) =>
-        prevIndex === Math.floor(Projets_fill.length / 3) - 1 ? 0 : prevIndex + 1
+        prevIndex === Math.floor(Projets_fill.length / groupSize) - 1
+          ? 0
+          : prevIndex + 1
       );
     }, 10000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [groupSize]);
 
-  const startIndexOfCurrentGroup = currentGroupIndex * 3;
+  const startIndexOfCurrentGroup = currentGroupIndex * groupSize;
   const projectsInCurrentGroup = Projets_fill.slice(
     startIndexOfCurrentGroup,
-    startIndexOfCurrentGroup + 3
+    startIndexOfCurrentGroup + groupSize
   );
 
   return (
@@ -40,7 +46,7 @@ const Projects = () => {
         {projectsInCurrentGroup.map((project, index) => (
           <motion.div
             key={project.project_name}
-            className="w-1/3 px-4"
+            className={`w-1/${groupSize} px-4`} // Utilisation de Tailwind CSS pour ajuster la largeur en fonction du nombre d'éléments par groupe
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
