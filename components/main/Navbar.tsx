@@ -21,7 +21,7 @@ const Navbar = () => {
               alt="logo"
               layout="fill"
               objectFit="cover"
-              className="cursor-pointer hover:animate-slowspin border border-solid border-gray-500 rounded-full w-full"
+              className="cursor-pointer hover:animate-slowspin border border-solid border-gray-500 rounded-full w-full min-w-full"
             />
           </div>
           <span className="font-bold ml-2 md:ml-4 hidden md:block text-gray-300">
