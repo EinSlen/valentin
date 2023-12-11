@@ -11,7 +11,7 @@ import {
 import { useState, useEffect } from "react";
 
 const Projects = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 }); // Ajoutez des breakpoints selon vos besoins
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   const groupSize = isMobile ? 1 : 3;
 
   const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
@@ -50,7 +50,7 @@ const Projects = () => {
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
-            transition={{ duration: 0.5, delay: index * 0.5 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <ProjectCard
               src={project.src}

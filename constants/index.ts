@@ -218,7 +218,7 @@ export const Skill_data = [
     {
       project_name: "Twitter BOT (X)",
       src: "/projets/brulux.png",
-      description: "Un bot twitter en JS avec l'api de twitter qui follow les tweets, tweet et répond avec les répliques de brulux."
+      description: "Un bot twitter (X) en JS avec l'api de twitter qui follow les tweets, tweet et répond avec les répliques de brulux."
     },
     {
       project_name: "Objets 3D (Three)",
@@ -265,4 +265,22 @@ export const Skill_data = [
       src: "/projets/ajout.png",
       description: ""
     },
+];
+
+export const career = [
+  {
+    name: "Bac STI2D",
+    date: "2020",
+    place: "Lycée Henri D'Arras - Liévin"
+  },
+  {
+    name: "Prepa Scientique",
+    date: "2020 - 2021",
+    place: "Lycée Wallon - Valencienne"
+  },
+  {
+    name: "BUT Informatique",
+    date: "2021 - 2024",
+    place: "IUT de Lens - Lens"
+  }
 ];
