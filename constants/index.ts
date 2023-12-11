@@ -150,6 +150,12 @@ export const Skill_data = [
       height: 70,
     }, 
     {
+      skill_name: "Java",
+      Image: "/svg/java.svg",
+      width: 70,
+      height: 70,
+    },
+    {
       skill_name: "Python",
       Image: "/svg/python.png",
       width: 70,
@@ -189,6 +195,8 @@ export const Skill_data = [
       project_name: "Dedale",
       src: "/projets/dedale.jpg",
       description: "Battez vous dans des labyrinthes captivants en solo avec une IA redoutable ou défiez vos amis dans des aventures multijoueurs passionnantes avec Dédale, le jeu Java ultime de stratégie et d'exploration",
+      images: ["/svg/java.svg"]
+      
     }, 
     {
       project_name: "FlatCraft",

@@ -5,7 +5,7 @@ import CareerContent from "@/components/sub/CareerContent"
 export default function Career() {
     return (
         <div className="flex flex-col items-center justify-center mb-10" id="career">
-          <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pb-20">
             Ma Formation
           </h1>
           <div className="max-w-screen-md mx-auto mt-8 flex relative">

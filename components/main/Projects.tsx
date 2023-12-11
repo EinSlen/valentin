@@ -23,7 +23,19 @@ const Projects = () => {
           ? 0
           : prevIndex + 1
       );
-    }, 10000);
+    }, 5000); // Adjust the interval time as needed (5000 milliseconds = 5 seconds)
+
+    return () => clearInterval(intervalId);
+  }, [groupSize]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentGroupIndex((prevIndex) =>
+        prevIndex === Math.floor(Projets_fill.length / groupSize) - 1
+          ? 0
+          : prevIndex + 1
+      );
+    }, 5000); // Adjust the interval time as needed (5000 milliseconds = 5 seconds)
 
     return () => clearInterval(intervalId);
   }, [groupSize]);
@@ -33,6 +45,7 @@ const Projects = () => {
     startIndexOfCurrentGroup,
     startIndexOfCurrentGroup + groupSize
   );
+
 
   return (
     <div
@@ -56,6 +69,7 @@ const Projects = () => {
               src={project.src}
               title={project.project_name}
               description={project.description}
+              images={project.images}
             />
           </motion.div>
         ))}
