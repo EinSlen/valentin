@@ -79,8 +79,8 @@ export const Skill_data = [
     {
       skill_name: "Next js 13",
       Image: "/svg/next-js.svg",
-      width: 80,
-      height: 80,
+      width: 70,
+      height: 70,
     },
     {
       skill_name: "Php",
@@ -98,8 +98,8 @@ export const Skill_data = [
     {
       skill_name: "Type Script",
       Image: "/svg/ts.png",
-      width: 80,
-      height: 80,
+      width: 70,
+      height: 70,
     },
     {
       skill_name: "React",
@@ -112,9 +112,9 @@ export const Skill_data = [
   export const Backend_skill = [
     {
       skill_name: "SQLlite",
-      Image: "/svg/sqllite.png",
-      width: 120,
-      height: 120,
+      Image: "/svg/sqllite.svg",
+      width: 70,
+      height: 70,
     },
     {
       skill_name: "Fire base",
@@ -201,72 +201,89 @@ export const Skill_data = [
     {
       project_name: "FlatCraft",
       src: "/projets/flatcraft.png",
-      description: "Participation au projet Flatcraft de l'IUT de Lens : conception, réalisation et implémentation en équipe à un jeu vidéo en trois dimensions existant, en Java et avec la librairie graphique JavaFX."
+      description: "Participation au projet Flatcraft de l'IUT de Lens : conception, réalisation et implémentation en équipe à un jeu vidéo en trois dimensions existant, en Java et avec la librairie graphique JavaFX.",
+      images: ["/svg/java.svg"]
     },
     {
       project_name: "Calcul Muscu PDC/BMI",
       src: "/projets/calculm.jpg",
-      description: "Application en React Native qui permet de calculer / Tracker son poids/taille, son IMC sur les 7 derniers jours, son IBM et le poids du corps de l'utilisateur"
+      description: "Application en React Native qui permet de calculer / Tracker son poids/taille, son IMC sur les 7 derniers jours, son IBM et le poids du corps de l'utilisateur",
+      images: ["/svg/js.png", "/svg/react.png"]
     },
     {
       project_name: "PokerPlay",
       src: "/projets/pokerplay.png",
-      description: "Bot discord de poker (+100 000 UTILISATEURS, +700 SERVEURS) -  https://top.gg/fr/bot/724926316859621427"
+      description: "Bot discord de poker (+100 000 UTILISATEURS, +700 SERVEURS) -  https://top.gg/fr/bot/724926316859621427",
+      images: ["/svg/js.png", "/svg/ts.png", "/svg/Firebase.png"]
     },
     {
       project_name: "Starte",
       src: "/projets/real.png",
-      description: "Starte, grâce à son site web élaboré avec soin en React Native, alliant performance et élégance pour stimuler votre parcours entrepreneurial"
+      description: "Starte, grâce à son site web élaboré avec soin en React Native, alliant performance et élégance pour stimuler votre parcours entrepreneurial",
+      images: ["/svg/js.png", "/svg/native.png"]
     },
     {
       project_name: "Pykemon",
       src: "/projets/pykemon.png",
-      description: "Pykemon, Mini jeu vidéo reproduit les pokémon d'antan sous python et fichier tmx. (3 maps, 7 maisons, 15 pokémons, gestions des combats, inventaires, captures des pokémons...)"
+      description: "Pykemon, Mini jeu vidéo reproduit les pokémon d'antan sous python et fichier tmx. (3 maps, 7 maisons, 15 pokémons, gestions des combats, inventaires, captures des pokémons...)",
+      images: ["/svg/python.png"]
     },
     {
       project_name: "Twitter BOT (X)",
       src: "/projets/brulux.png",
-      description: "Un bot twitter (X) en JS avec l'api de twitter qui follow les tweets, tweet et répond avec les répliques de brulux."
+      description: "Un bot twitter (X) en JS avec l'api de twitter qui follow les tweets, tweet et répond avec les répliques de brulux.",
+      images: ["/svg/js.png"]
+    
     },
     {
       project_name: "Objets 3D (Three)",
       src: "/projets/objet3d.png",
-      description: "Rendu serveur d'objets 3D avec des gltf & bin grâce à three JS et GLTFLoader"
+      description: "Rendu serveur d'objets 3D avec des gltf & bin grâce à three JS et GLTFLoader",
+      images: ["/svg/js.png"]
     },
     {
       project_name: "Crunchyroll Scraper",
       src: "/projets/scrapper.png",
-      description: "Scraper du site web crunchyroll pour récupérer les informations des dernières sorties avec puppeteer (Browser)"
+      description: "Scraper du site web crunchyroll pour récupérer les informations des dernières sorties avec puppeteer (Browser)",
+      images: ["/svg/js.png", "/svg/express.png"]
+    
     },
     {
       project_name: "Npm APP",
       src: "/projets/electron.png",
-      description: "Application en electron js pour gérer les dépendances de npm"
+      description: "Application en electron js pour gérer les dépendances de npm",
+      images: ["/svg/js.png", "/svg/electron.png"]
     },
     {
       project_name: "JUST-SQUARE",
       src: "/projets/justsquare.png",
-      description: "Petit jeu FPS en multijoueur serveur sur navigateur internet avec des classes, des objectifs, un joueurs contre joueurs (BABYLON js)"
+      description: "Petit jeu FPS en multijoueur serveur sur navigateur internet avec des classes, des objectifs, un joueurs contre joueurs (BABYLON js)",
+      images: ["/svg/js.png"]
+    
     },
     {
       project_name: "Pokedex",
       src: "/projets/ajout.png",
-      description: "Pokedex pour récupérer les informations du pokemon demandé avec Flask python de l'api (api-pokemon.fr)  "
+      description: "Pokedex pour récupérer les informations du pokemon demandé avec Flask python de l'api (api-pokemon.fr)",
+      images: ["/svg/python.png", "/svg/flask.webp"]
     },
     {
       project_name: "ReyTracer",
       src: "/projets/scene7.png",
-      description: "Réalisation en équipe en sae d'un reytracer qui génère une image en 3d ou 2d avec des jeux de lumières et d'autres fonctionnalité à partir d'un fichier text avec Graddle"
+      description: "Réalisation en équipe en sae d'un reytracer qui génère une image en 3d ou 2d avec des jeux de lumières et d'autres fonctionnalité à partir d'un fichier text avec Graddle",
+      images: ["/svg/java.svg"]
     },
     {
       project_name: "Bataille Navale",
       src: "/projets/bataille.png",
-      description: "Jeu Bataille Navale avec Graddle en utilisant le scène builder les modèles MVC et la bibliothèque JavaFX"
+      description: "Jeu Bataille Navale avec Graddle en utilisant le scène builder les modèles MVC et la bibliothèque JavaFX",
+      images: ["/svg/java.svg"]
     },
     {
       project_name: "Laravel Application",
       src: "/projets/ajout.png",
-      description: "Application en php laravel permettant de gérer des tâches de sport (éditer, ajouter, supprimer) et des utilisateurs (connection...) avec SQLite."
+      description: "Application en php laravel permettant de gérer des tâches de sport (éditer, ajouter, supprimer) et des utilisateurs (connection...) avec SQLite.",
+      images: ["/svg/php.png", "/svg/laravel.png", "/svg/sqllite.svg"]
     },
     {
       project_name: "",
