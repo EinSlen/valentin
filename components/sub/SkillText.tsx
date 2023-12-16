@@ -3,8 +3,10 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motion'
 import { SparklesIcon } from '@heroicons/react/24/solid'
+import { useTranslation } from "react-i18next";
 
 const SkillText = () => {
+  const { t } = useTranslation();
   return (
     <div className='w-full h-auto flex flex-col items-center justify-center'>
 <motion.div
@@ -13,14 +15,14 @@ const SkillText = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Le meilleur, avec les meilleurs &nbsp;
+          {t('translations:Skills.title')}&nbsp;
           </h1>
         </motion.div>
         <motion.div
         variants={slideInFromLeft(0.5)}
         className='text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]'
         >
-            Toutes mes compétences avec les technos !
+             {t('translations:Skills.SkillsH1')}
         </motion.div>
         <motion.div
         variants={slideInFromRight(0.5)}

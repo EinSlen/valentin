@@ -190,7 +190,7 @@ export const Skill_data = [
   ];
 
 
-  export const Projets_fill = [
+  export const Projets_fill_fr = [
     {
       project_name: "Dedale",
       src: "/projets/dedale.jpg",
@@ -285,14 +285,106 @@ export const Skill_data = [
       description: "Application en php laravel permettant de gérer des tâches de sport (éditer, ajouter, supprimer) et des utilisateurs (connection...) avec SQLite.",
       images: ["/svg/php.png", "/svg/laravel.png", "/svg/sqllite.svg"]
     },
-    {
-      project_name: "",
-      src: "/projets/ajout.png",
-      description: ""
-    },
 ];
 
-export const career = [
+export const Projets_fill_en = [
+  {
+    project_name: "Dedale",
+    src: "/projets/dedale.jpg",
+    description: "Battle through captivating mazes solo with fearsome AI or challenge your friends in thrilling multiplayer adventures with Daedalus, the ultimate Java strategy and exploration game",
+    images: ["/svg/java.svg"]
+    
+  }, 
+  {
+    project_name: "FlatCraft",
+    src: "/projets/flatcraft.png",
+    description: "Participation in the Flatcraft project at the IUT of Lens: team design, creation and implementation of an existing three-dimensional video game, in Java and with the JavaFX graphics library.",
+    images: ["/svg/java.svg"]
+  },
+  {
+    project_name: "Calcul Muscu PDC/BMI",
+    src: "/projets/calculm.jpg",
+    description: "Application in React Native which allows you to calculate / Track your weight/height, your BMI over the last 7 days, your IBM and the user's body weight",
+    images: ["/svg/js.png", "/svg/react.png"]
+  },
+  {
+    project_name: "PokerPlay",
+    src: "/projets/pokerplay.png",
+    description: "Discord poker bot (+100,000 USERS, +700 SERVERS) -  https://top.gg/fr/bot/724926316859621427",
+    images: ["/svg/js.png", "/svg/ts.png", "/svg/Firebase.png"]
+  },
+  {
+    project_name: "Starte",
+    src: "/projets/real.png",
+    description: "Starte, thanks to its website carefully developed in React Native, combining performance and elegance to stimulate your entrepreneurial journey",
+    images: ["/svg/js.png", "/svg/native.png"]
+  },
+  {
+    project_name: "Pykemon",
+    src: "/projets/pykemon.png",
+    description: "Pykemon, Mini video game reproduces the pokemon of yesteryear in python and tmx file. (3 maps, 7 houses, 15 pokémons, combat management, inventories, pokémon captures...)",
+    images: ["/svg/python.png"]
+  },
+  {
+    project_name: "Twitter BOT (X)",
+    src: "/projets/brulux.png",
+    description: "A Twitter bot (X) in JS with the Twitter API that follows tweets, tweets and responds with brulux replies.",
+    images: ["/svg/js.png"]
+  
+  },
+  {
+    project_name: "Objets 3D (Three)",
+    src: "/projets/objet3d.png",
+    description: "3D object server rendering with gltf & bin using three JS and GLTFLoader",
+    images: ["/svg/js.png"]
+  },
+  {
+    project_name: "Crunchyroll Scraper",
+    src: "/projets/scrapper.png",
+    description: "Scraper of the crunchyroll website to retrieve information from the latest releases with puppeteer (Browser)",
+    images: ["/svg/js.png", "/svg/express.png"]
+  
+  },
+  {
+    project_name: "Npm APP",
+    src: "/projets/electron.png",
+    description: "Application in electron js to manage npm dependencies",
+    images: ["/svg/js.png", "/svg/electron.png"]
+  },
+  {
+    project_name: "JUST-SQUARE",
+    src: "/projets/justsquare.png",
+    description: "Small FPS game in server multiplayer on an internet browser with classes, objectives, players versus players (BABYLON js)",
+    images: ["/svg/js.png"]
+  
+  },
+  {
+    project_name: "Pokedex",
+    src: "/projets/ajout.png",
+    description: "Pokedex to retrieve the information of the requested pokemon with Flask python from the api (api-pokemon.fr)",
+    images: ["/svg/python.png", "/svg/flask.webp"]
+  },
+  {
+    project_name: "ReyTracer",
+    src: "/projets/scene7.png",
+    description: "Team creation in sae of a reytracer which generates a 3d or 2d image with light effects and other functionalities from a text file with Graddle",
+    images: ["/svg/java.svg"]
+  },
+  {
+    project_name: "Bataille Navale",
+    src: "/projets/bataille.png",
+    description: "Naval Battle game with Graddle using the scene builder MVC models and the JavaFX library",
+    images: ["/svg/java.svg"]
+  },
+  {
+    project_name: "Laravel Application",
+    src: "/projets/ajout.png",
+    description: "Application in php laravel allowing you to manage sports tasks (edit, add, delete) and users (connection...) with SQLite.",
+    images: ["/svg/php.png", "/svg/laravel.png", "/svg/sqllite.svg"]
+  },
+];
+
+export const career_fr = [
   {
     name: "Bac STI2D",
     date: "2020",
@@ -309,3 +401,23 @@ export const career = [
     place: "IUT de Lens - Lens"
   }
 ];
+
+export const career_en = [
+  {
+    name: "French Secondary School Diploma Science & IT",
+    date: "2020",
+    place: "Lycée Henri D'Arras - Liévin"
+  },
+  {
+    name: "Scientific preparatory course",
+    date: "2020 - 2021",
+    place: "Lycée Wallon - Valencienne"
+  },
+  {
+    name: "Three-year university degree in IT",
+    date: "2021 - 2024",
+    place: "IUT de Lens - Lens"
+  }
+];
+
+

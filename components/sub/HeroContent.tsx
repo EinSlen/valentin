@@ -10,11 +10,13 @@
   import { SparklesIcon } from "@heroicons/react/24/solid";
   import Image from "next/image";
   import {SparklesAnimations} from "@/components/sub/SparklesAnimations";
+  import { useTranslation } from 'react-i18next';
 
   
   const HeroContent = () => {
     const controlsLeft = useAnimation();
     const controlsText = useAnimation();
+    const { t } = useTranslation();
 
     useEffect(() => {
       const animateLeft = async () => {
@@ -63,10 +65,10 @@
               className="flex flex-col gap-6 mt-6 text-6xl leading-tight font-bold text-white max-w-[600px] w-auto h-auto"
             >
               <span>
-                Salut ! Je suis Étudiant à
+                {t('translations:Hero.HeroH1.part1')}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                   {" "}
-                  l&apos;IUT de Lens
+                  {t('translations:Hero.HeroH1.part2')}
                 </span>.
               </span>
             </motion.div>
@@ -75,18 +77,18 @@
               variants={slideInFromLeft(0.8)}
               className="text-lg text-gray-400 my-5 max-w-[600px]"
             >
-              &rsaquo;&rsaquo;&nbsp; Je suis étudiant à l&apos;IUT de Lens, en{" "}
-              <SparklesAnimations text="BUT 2" /> regardez mes projets
-              et les techno que j&apos;utilise !
+              {t('translations:Hero.HeroP.part1')}{" "}
+              <SparklesAnimations text="BUT 2" />{" "}
+              {t('translations:Hero.HeroP.part2')}
             </motion.p>
             <br />
             <motion.a
               variants={slideInFromLeft(1)}
-              href="/cv.pdf"
+              href={t('translations:Hero.HeroA.src')}
               target="_blank"
               className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 z-50"
             >
-              Télécharger mon CV
+              {t('translations:Hero.HeroA.titre')}
             </motion.a>
           </motion.div>
         </div>

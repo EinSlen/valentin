@@ -3,23 +3,26 @@
   import React from "react";
   import { useMediaQuery } from "react-responsive";
   import ProjectCard from "../sub/ProjectCard";
-  import { Projets_fill } from "@/constants";
+  import { Projets_fill_fr, Projets_fill_en } from "@/constants";
   import { motion } from "framer-motion";
   import {
     slideInFromLeft
   } from "@/utils/motion";
   import { useState, useEffect } from "react";
+  import { useTranslation } from 'react-i18next';
 
   const Projects = () => {
+    const { t, i18n } = useTranslation();
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const groupSize = isMobile ? 1 : 3;
+    const Projets_fill_use = i18n.language === 'fr' ? Projets_fill_fr : Projets_fill_en
 
     const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
     useEffect(() => {
       const intervalId = setInterval(() => {
         setCurrentGroupIndex((prevIndex) =>
-          prevIndex === Math.floor(Projets_fill.length / groupSize) - 1
+          prevIndex === Math.floor(Projets_fill_use.length / groupSize) - 1
             ? 0
             : prevIndex + 1
         );
@@ -31,7 +34,7 @@
     useEffect(() => {
       const intervalId = setInterval(() => {
         setCurrentGroupIndex((prevIndex) =>
-          prevIndex === Math.floor(Projets_fill.length / groupSize) - 1
+          prevIndex === Math.floor(Projets_fill_use.length / groupSize) - 1
             ? 0
             : prevIndex + 1
         );
@@ -41,7 +44,7 @@
     }, [groupSize]);
 
     const startIndexOfCurrentGroup = currentGroupIndex * groupSize;
-    const projectsInCurrentGroup = Projets_fill.slice(
+    const projectsInCurrentGroup = Projets_fill_use.slice(
       startIndexOfCurrentGroup,
       startIndexOfCurrentGroup + groupSize
     );
@@ -53,7 +56,7 @@
         id="projects"
       >
         <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-          Mes Projets
+          {t('translations:Projets.ProjetsH1')}
         </h1>
         <div className="min-h-full min-w-full px-10 flex">
           {projectsInCurrentGroup.map((project, index) => (
@@ -82,9 +85,9 @@
           variants={slideInFromLeft(1)}
           href="https://github.com/EinSlen?tab=repositories"
           target="_blank"
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 mt-5 z-2"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] p-5 mt-5 z-50"
         >
-          En savoir plus...
+          {t('translations:Projets.ProjetsLearn')}
         </motion.a>
       </div>
     );

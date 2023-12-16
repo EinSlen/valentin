@@ -4,9 +4,11 @@ import { Socials } from "@/constants";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   
+  const { t } = useTranslation();
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -70,13 +72,13 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <div className="hidden md:flex items-center border mx-auto border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] rounded-full text-gray-200 md:gap-20">
           <a href="#career" className="cursor-pointer">
-            Formation
+          {t('translations:NavBar.Data.0')}
           </a>
           <a href="#skills" className="cursor-pointer">
-            Langages/Logiciels
+          {t('translations:NavBar.Data.1')}
           </a>
           <a href="#projects" className="cursor-pointer">
-            Projets
+          {t('translations:NavBar.Data.2')}
           </a>
         </div>
 

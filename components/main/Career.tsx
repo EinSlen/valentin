@@ -1,23 +1,26 @@
 'use client';
 
 import React from 'react';
-import { career } from "@/constants"
+import { career_fr, career_en } from "@/constants"
 import CareerContent from "@/components/sub/CareerContent"
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from "react-i18next";
 
 export default function Career() {
+  const { t, i18n  } = useTranslation();
+  const careerItems = i18n.language === 'fr' ? career_fr : career_en;
   const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
     <div className="flex flex-col items-center justify-center mb-10" id="career">
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 pb-20">
-        Ma Formation
+        {t('translations:Career.Formation')}
       </h1>
       <div className={`max-w-screen-md mx-auto mt-8 flex ${isMobile ? 'flex-col' : 'relative'}`}>
-        {career.map((stage, index) => (
+      {careerItems && careerItems.map((stage, index) => (
           <React.Fragment key={index}>
             <CareerContent index={index} {...stage} />
-            {index < career.length - 1 && isMobile && <div className="w-full h-px bg-gray-300 my-4 gap-2"></div>}
-            {index < career.length - 1 && !isMobile && <div className="w-px h-5 bg-gray-300 mx-4 pt-10"></div>}
+            {index < careerItems.length - 1 && isMobile && <div className="w-full h-px bg-gray-300 my-4 gap-2"></div>}
+            {index < careerItems.length - 1 && !isMobile && <div className="w-px h-5 bg-gray-300 mx-4 pt-10"></div>}
           </React.Fragment>
         ))}
       </div>
