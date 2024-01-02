@@ -13,10 +13,10 @@ const LanguageSelector = () => {
     <select
       value={i18n.language}
       onChange={(e) => changeLanguage(e.target.value)}
-      style={{ background: 'transparent', color: '#fff' }}
+      style={{ background: 'transparent' }}
     >
-      <option value="fr">Français</option>
-      <option value="en">English</option>
+      <option value="fr">Français 🇫🇷</option>
+      <option value="en">English 🇬🇧</option>
     </select>
   );
 };
