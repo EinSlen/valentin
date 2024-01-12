@@ -1,3 +1,3 @@
 - Portfolio Valentin damlencourt V1
  - Deploiment status :  [![Netlify Status](https://api.netlify.com/api/v1/badges/eda0398c-fbd7-4093-baa4-574f1f639835/deploy-status)](https://app.netlify.com/sites/dvlad/deploys)
-- Vous retrouvez mes compétences, mon parcours et mes porjets
+- Vous retrouvez mes compétences, mon parcours et mes projets
