@@ -16,7 +16,7 @@ const ProjectCard = ({ src, title, description, images }: Props) => {
         alt={title}
         width={1000}
         height={1000}
-        className="w-full object-contain min-h-1000 min-w-1000"
+        className="h-1000 w-1000"
       />
 
       <div className="relative p-4">
@@ -28,9 +28,9 @@ const ProjectCard = ({ src, title, description, images }: Props) => {
           {images &&
             images.map((img, index) => (
               <Image
-                key={title}
+                key={`${title}-image-${index}`}
                 src={img}
-                alt={`${title}-image-${index}`}
+                alt={title}
                 width={30}
                 height={30}
               />
