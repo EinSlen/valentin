@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'out',
+    distDir: 'build',
     experimental: {
         optimizePackageImports: ['icon-library'],
         optimizeCss: true,
