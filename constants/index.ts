@@ -386,7 +386,7 @@ export const Projets_fill_en = [
 
 export const career_fr = [
   {
-    name: "Bac STI2D",
+    name: "Bac Scientifique",
     date: "2020",
     place: "Lycée Henri D'Arras - Liévin"
   },
@@ -396,9 +396,9 @@ export const career_fr = [
     place: "Lycée Wallon - Valencienne"
   },
   {
-    name: "BUT Informatique",
+    name: "Ecole d'ingénieur Informatique",
     date: "2021 - 2024",
-    place: "IUT de Lens - Lens"
+    place: "IMT Nord Europe - Lille"
   }
 ];
 
