@@ -78,7 +78,7 @@
               className="text-lg text-gray-400 my-5 max-w-[600px]"
             >
               {t('translations:Hero.HeroP.part1')}{" "}
-              <SparklesAnimations text="BUT 2" />{" "}
+              <SparklesAnimations text="Informatique" />{" "}
               {t('translations:Hero.HeroP.part2')}
             </motion.p>
             <br />

@@ -5,10 +5,10 @@ export default {
     Hero: {
         HeroH1: {
             part1: "Salut ! Je suis Étudiant à",
-            part2: "l'IUT de Lens"
+            part2: "l'IMT Nord Europe"
         },
         HeroP: {
-            part1: "» Je suis étudiant à l'IUT de Lens, en",
+            part1: "» Je suis étudiant à l'IMT Nord Europe, en",
             part2: "regardez mes projets et les techno que j'utilise !"
         },
         HeroA: {
