@@ -9,10 +9,6 @@ const nextConfig = {
         optimizeServerReact: true,
     },
     swcMinify: true,
-    i18n: {
-        locales: ["fr", "en"],
-        defaultLocale: "fr",
-    },
     images: {
         domains: ["avatars.githubusercontent.com"],
     },
