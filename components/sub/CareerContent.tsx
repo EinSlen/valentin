@@ -1,18 +1,17 @@
 'use client';
 
 import React from 'react';
-import { career_fr } from '@/constants';
-import { useMediaQuery } from 'react-responsive';
 
 interface Career {
     name: string,
     date: string,
     place: string,
-    index: number
+    index: number,
+    total: number,
+    isMobile: boolean
 }
 
-const CareerContent = ({ name, date, place, index }: Career) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+const CareerContent = ({ name, date, place, index, total, isMobile }: Career) => {
     return (
         <div className="relative">
           <div className="flex items-center">
@@ -21,7 +20,7 @@ const CareerContent = ({ name, date, place, index }: Career) => {
               <p className="text-gray-600">{date} - {place}</p>
             </div>
           </div>
-          {!isMobile && index < career_fr.length && (
+          {!isMobile && index < total && (
             <div
               className="w-4 h-4 bg-blue-500 rounded-full mt-2 ml-6 border border-white-900"
             ></div>

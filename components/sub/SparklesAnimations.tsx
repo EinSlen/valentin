@@ -30,29 +30,29 @@ export const SparklesAnimations = ({ text }: { text: string }) => {
     }, [controls]);
 
     return (
-      <div style={{ position: "relative", display: "inline-block" }}>
+      <span style={{ position: "relative", display: "inline-block" }}>
         {/* Sparkle en haut à gauche */}
-        <motion.div
-          style={{ position: "absolute", left: -10, top: -15 }}
+        <motion.span
+          style={{ position: "absolute", left: -10, top: -15, display: "inline-block" }}
           animate={{ opacity: [0, 1, 0], scale: [0, 1, 0] }}
           transition={{ duration: 3, repeat: Infinity }}
         >
           <SparklesIcon className="text-[#b49bff] h-5 w-5" />
-        </motion.div>
+        </motion.span>
 
         {/* Sparkle en bas à droite */}
-        <motion.div
-          style={{ position: "absolute", right: -10, bottom: -15 }}
+        <motion.span
+          style={{ position: "absolute", right: -10, bottom: -15, display: "inline-block" }}
           animate={{ opacity: [0, 1, 0], scale: [0, 1, 0] }}
           transition={{ duration: 3, repeat: Infinity }}
         >
           <SparklesIcon className="text-[#b49bff] h-5 w-5" />
-        </motion.div>
+        </motion.span>
 
         {/* Texte avec animation de souffle */}
         <motion.span style={{ fontWeight: "bold" }} animate={controls}>
           {text}
         </motion.span>
-      </div>
+      </span>
     );
   };

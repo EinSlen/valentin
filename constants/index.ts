@@ -386,7 +386,7 @@ export const Projets_fill_en = [
 
 export const career_fr = [
   {
-    name: "Bac Scientifique",
+    name: "Bac STI2D",
     date: "2020",
     place: "Lycée Henri D'Arras - Liévin"
   },
@@ -396,15 +396,20 @@ export const career_fr = [
     place: "Lycée Wallon - Valencienne"
   },
   {
-    name: "Ecole d'ingénieur Informatique",
+    name: "BUT Informatique",
     date: "2021 - 2024",
+    place: "IUT de Lens - Lens"
+  },
+  {
+    name: "Ecole d'ingénieur Informatique",
+    date: "2024 - present",
     place: "IMT Nord Europe - Lille"
   }
 ];
 
 export const career_en = [
   {
-    name: "French Secondary School Diploma Science & IT",
+    name: "Bac STI2D",
     date: "2020",
     place: "Lycée Henri D'Arras - Liévin"
   },
@@ -414,9 +419,14 @@ export const career_en = [
     place: "Lycée Wallon - Valencienne"
   },
   {
-    name: "Three-year university degree in IT",
+    name: "BUT Computer Science",
     date: "2021 - 2024",
     place: "IUT de Lens - Lens"
+  },
+  {
+    name: "Computer Science Engineering School",
+    date: "2024 - present",
+    place: "IMT Nord Europe - Lille"
   }
 ];
 
